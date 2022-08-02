@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Nique</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZjd4x2fILrETD2qdAspDjfi3B9SB4HShBSv14EOsryFMpXQIZ0Y8VWrPDzE0W2IxCrDo&usqp=CAU"
+        alt="logo"
+        width="90"
+      />
+      <nav>
+        <a href="#"><i class="bi bi-cart4"></i></a>
+      </nav>
+    </header>
+    <!-- Slider -->
+    <div class="container">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://media.gq.com.mx/photos/60f1a6e33b54691d4e5cb9be/16:9/w_2560%2Cc_limit/nike%2520space%2520jam%25204.jpg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1579298245158-33e8f568f7d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80"
+              alt=""
+            />
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+    <div class="articles">
+      <div class="card">
+        <h1>Tenis</h1>
+        <img src="https://i.linio.com/p/1523e28e91de62ccb75cb9c98ac6dd9f-product.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam totam in
+          esse, nulla perspiciatis eligendi sit? Nisi eius ratione consequatur.
+        </p>
+        <h4>2.000</h4>
+        <button>Add to cart</button>
+      </div>
+      <div class="card">
+        <h1>Tenis</h1>
+        <img src="https://m.media-amazon.com/images/I/81Bn6YYTm3L._AC_UX395_.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam totam in
+          esse, nulla perspiciatis eligendi sit? Nisi eius ratione consequatur.
+        </p>
+        <h4>3.000</h4>
+        <button>Add to cart</button>
+      </div>
+      <div class="card">
+        <h1>Tenis</h1>
+        <img src="https://media.gq.com.mx/photos/5f6c9980bc946e88f6c962d8/16:9/w_2560%2Cc_limit/sothebys-nike-sneaker-auction-03.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam totam in
+          esse, nulla perspiciatis eligendi sit? Nisi eius ratione consequatur.
+        </p>
+        <h4>1.000</h4>
+        <button>Add to cart</button>
+      </div>
+    </div>
+    <footer>
+        <div>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-whatsapp"></i></a>
+            <a href=""><i class="bi bi-twitter"></i></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
+
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: #000;
+    display: flex;
+    justify-content:space-between;
+    padding: 0px 30px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #000;
+    border-radius: 10px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-button-prev , .swiper-button-next{
+    color: #fff !important;
+}
+.swiper-pagination-bullet{
+    background-color: #fff;
+}
+.articles{
+    width: 100%;
+    height: auto;
+    min-height: 90vh;
+    background-color: #fff;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+    grid-gap: 30px;
+}
+.card{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+}
+.card h4{
+    font-size: 20px;
+    font-weight: bold;
+}
+.card p{
+    font-size: 14px;
+    color: rgb(120, 120, 120);
+}
+.card button{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    height: 10vh;
+    background-color: #000;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+footer div a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
